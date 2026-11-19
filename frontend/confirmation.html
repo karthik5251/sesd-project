@@ -1,1 +1,45 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ConcertHub</title><link rel="stylesheet" href="css/style.css"></head><body data-page="confirmation"><header><div class="container nav"><a href="index.html" class="logo">♫ Concert<span>Hub</span></a><nav><a href="index.html">Home</a><a href="concerts.html">Concerts</a><div id="auth-links" style="display:flex;align-items:center;gap:14px"></div></nav></div></header><main class="container"><div class="panel" style="text-align:center"><span class="eyebrow">You're going!</span><h1>Booking <span>confirmed</span></h1><p>Your demo reservation has been created.</p><div class="ticket"><p>Booking reference</p><h2 id="ref"></h2><p>Total amount</p><h2 id="total"></h2></div><p>No payment was collected. This is not a valid entry ticket.</p><a href="bookings.html" class="btn">My bookings</a></div><div id="message" class="alert hidden"></div></main><footer class="footer"><div class="container">© ConcertHub · Feel the sound. Live the moment. · Academic demonstration</div></footer><script src="js/app.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Booking Confirmed — ConcertHub</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="confirmation">
+  <header>
+    <div class="container nav">
+      <a href="index.html" class="logo">♫ Concert<span>Hub</span></a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="concerts.html">Concerts</a>
+        <div id="auth-links" style="display:flex;align-items:center;gap:14px"></div>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <div class="panel" style="text-align:center;max-width:620px">
+      <span class="eyebrow" style="color:#a3ffcf">✓ Order Completed</span>
+      <h1 style="margin:12px 0">Booking <span>Confirmed!</span></h1>
+      <p>Your concert tickets have been successfully reserved.</p>
+      <div class="ticket" style="margin:24px auto;text-align:left">
+        <h3 id="conf-title" style="margin:0 0 10px;font-size:1.35rem;color:#f39cff">Concert Reservation</h3>
+        <div class="row"><span>Booking Reference</span><strong id="ref" style="letter-spacing:1px;color:#a3ffcf">—</strong></div>
+        <div class="row"><span>Tickets Reserved</span><strong id="conf-qty">1</strong></div>
+        <div class="row"><span>Total Amount Paid</span><strong id="total" class="price" style="font-size:1.25rem">₹0.00</strong></div>
+        <div class="row"><span>Status</span><strong style="color:#a3ffcf">✓ Confirmed (Demo)</strong></div>
+      </div>
+      <p><small>Academic demonstration only · No payment was collected · No physical ticket issued</small></p>
+      <div style="display:flex;gap:14px;justify-content:center;margin-top:24px;flex-wrap:wrap">
+        <a href="bookings.html" class="btn">View My Tickets</a>
+        <a href="concerts.html" class="btn outline">Explore More Concerts</a>
+      </div>
+    </div>
+    <div id="message" class="alert hidden"></div>
+  </main>
+  <footer class="footer">
+    <div class="container">© ConcertHub · Feel the sound. Live the moment. · Academic demonstration</div>
+  </footer>
+  <script src="js/app.js"></script>
+</body>
+</html>
